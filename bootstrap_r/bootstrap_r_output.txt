@@ -1,0 +1,21 @@
+This is a bootstrap median estimator using R:
+
+ORDINARY NONPARAMETRIC BOOTSTRAP
+
+
+Call:
+boot(data = sample_data, statistic = median_func, R = 1000)
+
+
+Bootstrap Statistics :
+      original      bias    std. error
+t1* 0.06175631 -0.01277126   0.1315266
+
+Standard Error of the Median: 0.1315266 
+
+Execution time: 0.103 seconds
+
+Memory usage snapshot from gc():
+          used (Mb) gc trigger (Mb) limit (Mb) max used (Mb)
+Ncells  500195 26.8    1091978 58.4         NA   889369 47.5
+Vcells 1051643  8.1    8388608 64.0      16384  1864866 14.3
